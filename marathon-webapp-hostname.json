@@ -1,0 +1,22 @@
+{
+    "id": "webapp-hostname",
+    "container": {
+        "type": "DOCKER",
+        "docker": {
+            "image": "webapp-hostname",
+            "network": "BRIDGE",
+            "portMappings": [
+                {
+                    "containerPort": 4444,
+                    "hostPort": 0,
+                    "protocol": "tcp",
+                    "servicePort": 0
+                }
+            ]
+        }
+    },
+    "args": ["-e 'set :port, 4444'"],
+    "instances": 1,
+    "cpus": 0.2,
+    "mem": 1024
+}
