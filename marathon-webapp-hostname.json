@@ -15,7 +15,7 @@
             ]
         }
     },
-    "args": ["-e 'set :port, 4444'"],
+    "args": ["4444"],
     "instances": 1,
     "cpus": 0.2,
     "mem": 1024
