@@ -3,7 +3,7 @@
     "container": {
         "type": "DOCKER",
         "docker": {
-            "image": "webapp-hostname",
+            "image": "roobert/webapp-hostname",
             "network": "BRIDGE",
             "portMappings": [
                 {
