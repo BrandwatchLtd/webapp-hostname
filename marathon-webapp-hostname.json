@@ -4,6 +4,9 @@
         "type": "DOCKER",
         "docker": {
             "image": "roobert/webapp-hostname",
+            "parameters": [
+              { "key": "env", "value": "SERVICE_TAGS=SERVICE_TYPE_HTTP" }
+            ],
             "network": "BRIDGE",
             "portMappings": [
                 {
