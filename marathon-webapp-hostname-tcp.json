@@ -1,0 +1,26 @@
+{
+    "id": "webapp-hostname-tcp",
+    "container": {
+        "type": "DOCKER",
+        "docker": {
+            "image": "roobert/webapp-hostname",
+            "parameters": [
+              { "key": "env", "value": "SERVICE_NAME=webappp-hostname-tcp" },
+              { "key": "env", "value": "SERVICE_TAGS=SERVICE_PORT_4444,SERVICE_TYPE_TCP" }
+            ],
+            "network": "BRIDGE",
+            "portMappings": [
+                {
+                    "containerPort": 4444,
+                    "hostPort": 0,
+                    "protocol": "tcp",
+                    "servicePort": 0
+                }
+            ]
+        }
+    },
+    "args": ["4444"],
+    "instances": 1,
+    "cpus": 0.2,
+    "mem": 1024
+}

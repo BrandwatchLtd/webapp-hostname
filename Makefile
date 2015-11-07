@@ -14,3 +14,6 @@ deploy: test
 	@echo "deploying docker instance via marathon..."
 	@curl -s -XPOST -d @marathon-webapp-hostname.json mesos0:8080/v2/apps -H "Content-Type:application/json" | jq .
 
+deploy-tcp: test
+	@echo "deploying docker instance via marathon..."
+	@curl -s -XPOST -d @marathon-webapp-hostname-tcp.json mesos0:8080/v2/apps -H "Content-Type:application/json" | jq .
