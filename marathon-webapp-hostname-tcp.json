@@ -6,6 +6,7 @@
             "image": "roobert/webapp-hostname",
             "parameters": [
               { "key": "env", "value": "SERVICE_NAME=webapp-hostname-tcp" },
+              { "key": "env", "value": "SERVICE_CHECK_SCRIPT=nc $SERVICE_IP $SERVICE_PORT | grep OK" },
               { "key": "env", "value": "SERVICE_TAGS=SERVICE_PORT_4444,SERVICE_TYPE_TCP" }
             ],
             "network": "BRIDGE",

@@ -16,7 +16,7 @@ deploy: test
 
 destroy:
 	@echo "destroying webapp-hostname docker instance via marathon..."
-	@curl -XDELETE mesos0:8080/v2/apps/webapp-hostname
+	@curl -s -XDELETE mesos0:8080/v2/apps/webapp-hostname | jq .
 
 deploy-tcp: test
 	@echo "deploying docker instance via marathon..."
@@ -24,4 +24,4 @@ deploy-tcp: test
 
 destroy-tcp:
 	@echo "destroying webapp-hostname-tcp docker instance via marathon..."
-	@curl -XDELETE mesos0:8080/v2/apps/webapp-hostname-tcp
+	@curl -s -XDELETE mesos0:8080/v2/apps/webapp-hostname-tcp | jq .
