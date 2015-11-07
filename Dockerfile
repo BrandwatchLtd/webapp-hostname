@@ -1,9 +1,7 @@
-FROM debian:jessie
+FROM alpine:3.2
 
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get install -y ruby
-RUN gem install sinatra
+RUN apk update
+RUN apk add ruby-2.2.2-r0
 
 ADD app.rb /app.rb
 
