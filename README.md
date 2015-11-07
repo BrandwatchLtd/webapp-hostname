@@ -1,6 +1,6 @@
 # webapp-hostname
 
-A webapp that runs a webserver to return a hostname.
+A docker image that runs a webserver to return a hostname, originally built for testing mesos/marathon/docker.
 
 ## Usage
 
