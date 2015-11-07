@@ -2,6 +2,10 @@ build:
 	@echo "building docker image..."
 	@docker build -t webapp-hostname .
 
+push:
+	@echo "pushing new version of app to registry..."
+	@docker push roobert/webapp-hostname
+
 run:
 	@echo "running docker image..."
 	@docker run --rm webapp-hostname

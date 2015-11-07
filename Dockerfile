@@ -1,7 +1,7 @@
 FROM alpine:3.2
 
 RUN apk update
-RUN apk add ruby-2.2.2-r0
+RUN apk add ruby
 
 ADD app.rb /app.rb
 
