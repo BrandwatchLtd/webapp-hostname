@@ -5,7 +5,7 @@
         "docker": {
             "image": "roobert/webapp-hostname",
             "parameters": [
-              { "key": "env", "value": "SERVICE_NAME=webappp-hostname-tcp" },
+              { "key": "env", "value": "SERVICE_NAME=webapp-hostname-tcp" },
               { "key": "env", "value": "SERVICE_TAGS=SERVICE_PORT_4444,SERVICE_TYPE_TCP" }
             ],
             "network": "BRIDGE",
