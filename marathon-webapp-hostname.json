@@ -5,9 +5,8 @@
         "docker": {
             "image": "roobert/webapp-hostname",
             "parameters": [
-              { "key": "env", "value": "SERVICE_TAGS=SERVICE_TYPE_HTTP" },
-              { "key": "env", "value": "SERVICE_CHECK_HTTP=/health" },
-              { "key": "env", "value": "SERVICE_TAGS=SERVICE_PORT_4444" }
+              { "key": "env", "value": "SERVICE_TAGS=SERVICE_TYPE_HTTP,SERVICE_PORT_4444" },
+              { "key": "env", "value": "SERVICE_CHECK_HTTP=/health" }
             ],
             "network": "BRIDGE",
             "portMappings": [
