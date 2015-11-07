@@ -1,6 +1,6 @@
 build:
 	@echo "building docker image..."
-	@docker build -t webapp-hostname .
+	@docker build -t roobert/webapp-hostname .
 
 push:
 	@echo "pushing new version of app to registry..."
