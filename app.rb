@@ -3,7 +3,7 @@
 require 'webrick'
 require 'socket'
 
-port    = ARGV[0] ? ARGV[0].to_i : 4567
+port    = ARGV[0] ? ARGV[0].to_i : 80
 healthy = ARGV[1] ? ARGV[1].to_i : 200
 
 server  = WEBrick::HTTPServer.new(Port: port)
